@@ -1,5 +1,3 @@
-package jxh;
-
 import java.util.Scanner;
 
 class Student {
@@ -20,6 +18,21 @@ class Student {
     public void calculate() {
         int marks = (english + maths + science) / 3;
         System.out.println("Average marks: " + marks);
+        if(marks>=90) {
+			System.out.print("Grade A");
+		}
+		else if(marks <90 && marks >=75) {
+			System.out.print("Grade B");
+	    }
+		else if(marks<75 && marks>=60) {
+			System.out.print("Grade C");
+		}
+		else if(marks<60 && marks>=40) {
+			System.out.print("Grade D");
+		}
+		else {
+			System.out.print("Fail");  
+		}
     }
 }
 
@@ -29,9 +42,6 @@ public class Grade {
         Student s1 = new Student();
         s1.inputMarks();
         s1.calculate();
-        
-        
-        
-        
+      
     }
 }
