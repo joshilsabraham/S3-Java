@@ -1,5 +1,3 @@
-package jxh;
-
 import java.util.Scanner;
 
 public class Days {
