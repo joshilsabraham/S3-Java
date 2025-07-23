@@ -1,13 +1,9 @@
-package jxh;
-
-import java.util.Scanner;
-
 class Details {
     String name;
-    int age;
-    public void displayDetails() {
-        System.out.print(name);
-        System.out.print(age);
+    int age;  
+    void displayDetails() {
+        System.out.println("Name: " + name);
+        System.out.print("Age: " + age);
     }
 }
 
