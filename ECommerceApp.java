@@ -1,10 +1,15 @@
 class PaymentGateway {
 	public void makePayment(String cardNumber,String expiryDate,String cvv) {
+		System.out.println("Processing Payment.......");
 		System.out.println("Credit Card Payment Successful");
+		System.out.println("Thank You!");
+		
 	}
 	
 	public void makePayment(String upiid) {
+		System.out.println("Processing UPI Payment.......");
 		System.out.println("UPI Payment Successful");
+		System.out.println("Thank You!");
 	}
 	
 	public void makePayment(double amount) {
