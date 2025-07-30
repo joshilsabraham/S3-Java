@@ -15,6 +15,15 @@ class Shapes {
 
 public class Polymorphism {
 	public static void main(String[] args) {
-		
+		Shapes shape = new Shapes();
+
+		int rectangleArea = shape.area(5, 10); // Rectangle
+		System.out.println("Area of Rectangle: " + rectangleArea);
+
+		int squareArea = shape.area(7); // Square
+		System.out.println("Area of Square: " + squareArea);
+
+		int circleArea = shape.area(4.5f); // Circle
+		System.out.println("Area of Circle: " + circleArea);
 	}
 }
