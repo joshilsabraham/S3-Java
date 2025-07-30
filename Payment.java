@@ -16,9 +16,9 @@ class PaymentGateway {
 public class Payment {
 	public static void main(String[] args) {
 		PaymentGateway product= new PaymentGateway();
-		product.makepayment("Card Number","ExpiryDate","CVV");
-		upi=product.makepayment("UPIID");
-		cod=product.makepayment(35000);
+		product.makePayment("Card Number","ExpiryDate","CVV");
+		upi=product.makePayment("UPIID");
+		cod=product.makePayment(35000);
 		}
 }
 	}
