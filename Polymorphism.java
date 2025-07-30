@@ -7,13 +7,13 @@ class Shapes {
 		System.out.println("Square");
 		return a*a;
 	}
-	public int area(float a) {
+	public double area(float a) {
 		System.out.println("Circle");
-		return (int) (3.14 * (a*a));
+		return (3.14 * (a*a));
 	}
 }
 
-public class Polymorphism {
+public class MethodOverloading {
 	public static void main(String[] args) {
 		Shapes shape = new Shapes();
 
@@ -23,7 +23,7 @@ public class Polymorphism {
 		int squareArea = shape.area(7); // Square
 		System.out.println("Area of Square: " + squareArea);
 
-		int circleArea = shape.area(4.5f); // Circle
+		double circleArea = shape.area(4.5f); // Circle
 		System.out.println("Area of Circle: " + circleArea);
 	}
 }
