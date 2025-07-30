@@ -16,11 +16,10 @@ class PaymentGateway {
 public class Payment {
 	public static void main(String[] args) {
 		PaymentGateway product= new PaymentGateway();
-		card=product.makepayment("Card Number","ExpiryDate","CVV");
-		System.out.println(card);
+		product.makepayment("Card Number","ExpiryDate","CVV");
 		upi=product.makepayment("UPIID");
-		System.out.println(upi);
 		cod=product.makepayment(35000);
-		System.out.println(cod);
+		}
+}
 	}
 }
