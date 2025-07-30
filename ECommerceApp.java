@@ -13,7 +13,7 @@ class PaymentGateway {
 	
 }
 
-public class Payment {
+public class ECommerceApp {
 	public static void main(String[] args) {
 		PaymentGateway product= new PaymentGateway();
 		product.makePayment("Card Number","ExpiryDate","CVV");
