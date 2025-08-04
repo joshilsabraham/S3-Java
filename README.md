@@ -9,12 +9,12 @@ Each `.java` file represents a lab assignment aligned with the 24SJPBCST304 prog
 
 ```plaintext
 📁 S3-Java
-├── HelloWorld.java
-├── Calculator.java
-├── EmployeeInheritance.java
-├── ShapePolymorphism.java
-├── FileReadWrite.java
-├── ThreadDemo.java
+├── HelloJava.java
+├── BookStore.java
+├── Days.java
+├── ECommerceApp.java
+├── Odd.java
+├── Polymorphism.java
 └── README.md         # Repository documentation
 ```
 
@@ -34,16 +34,15 @@ According to 24SJPBCST304 syllabus, this lab covers:
 
 ## 💻 List of Programs
 
-| 📄 File Name               | 📝 Description                                                                               |
+| 📄 File Name               | 📝 Description                                                                              |
 | -------------------------- | -------------------------------------------------------------------------------------------- |
-| `HelloWorld.java`          | Basic structure of a Java class and `main()` method.                                         |
-| `Calculator.java`          | Simple CLI calculator with method overloading and exception handling.                        |
-| `Palindrome.java`          | Checks if strings or numbers are palindromes.                                                |
-| `EmployeeInheritance.java` | Models `Employee`, `Officer`, and `Manager` classes using inheritance.                       |
-| `ShapePolymorphism.java`   | Demonstrates abstract class `Shape` and polymorphic subclasses like `Rectangle`, `Triangle`. |
-| `FileReadWrite.java`       | Reads from and writes to files with proper exception handling.                               |
-| `ThreadDemo.java`          | Shows multithreading, thread priorities, and basic synchronization.                          |
-| *… and more:*              | StackQueue.java, MatrixTranspose.java, CustomException.java, InterfaceDemo.java, etc.        |
+| `HelloWorld.java`          | Prints "Hello Java"                                                                          |
+| `BookStore.java`           | Program that manages book-related operations                                                 |
+| `Days.java`                | Checks if strings or numbers are palindromes.                                                |
+| `ECommerceApp.java`        | Demonstrates method overloading in a simple Java e-commerce application.                     |
+| `Polymorphism.java`        | Demonstrates abstract class `Shape` and polymorphic subclasses like `Rectangle`, `Triangle`. |
+| `Odd.java`                 | Prints all odd numbers from 1 to 49.                                                         |
+| *… and more:*              |                                                                                              |
 
 ## 🛠️ Tools & Environment
 
