@@ -1,5 +1,3 @@
-package jxh;
-
 class Book {
 	String title;
 	String author;
@@ -38,10 +36,13 @@ class Book {
 }
 
 
-public class Books {
+public class Library {
 	public static void main(String[] args) {
 		Book b1= new Book();
-		Book b2= new Book();
+		Book b2= new Book("Book","Author");
 		Book b3= new Book();
+		b1.displayInfo();
+		b2.displayInfo(false);
+		b3.displayInfo(true);
 	}
 }	
