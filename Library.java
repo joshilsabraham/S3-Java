@@ -1,3 +1,5 @@
+package jxh;
+
 class Book {
 	String title;
 	String author;
@@ -25,24 +27,31 @@ class Book {
     }
 	
 	public void displayInfo(boolean showLibrary){
-		if(showLibrary==true) {
+		if(showLibrary){
+			displayInfo();
 			System.out.println(LIBRARY_NAME);
-		}	
+		}else {
+			displayInfo();
+		}
 	}
 	
-	public static int displayTotalBooks() {
-		return bookCounter;
+	public static void displayTotalBooks() {
+        System.out.println("Total Books: " + (bookCounter-1000) );
 	}
 }
 
 
 public class Library {
-	public static void main(String[] args) {
-		Book b1= new Book();
-		Book b2= new Book("Book","Author");
-		Book b3= new Book();
-		b1.displayInfo();
-		b2.displayInfo(false);
-		b3.displayInfo(true);
-	}
-}	
+    public static void main(String[] args) {
+        Book b1 = new Book();
+        Book b2 = new Book("Book", "Author");
+        Book b3 = new Book();
+        System.out.println("Book 1: ");
+        b1.displayInfo();
+        System.out.println("Book 2: ");
+        b2.displayInfo(false);
+        System.out.println("Book 3: ");
+        b3.displayInfo(true);
+        Book.displayTotalBooks();
+    }
+}
