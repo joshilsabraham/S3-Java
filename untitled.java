@@ -10,33 +10,38 @@ class Book {
 	Book(){
 		title="Untitled";
 		author="Undefined";
-		bookID++;
 		bookCounter++;
+		bookID=bookCounter;
 	}
 	
 	Book(String title,String author){
 		bookCounter++;
+		bookID=bookCounter;	
 	}
+	 
+    public void displayInfo() {
+        System.out.println("Library: " + LIBRARY_NAME);
+        System.out.println("Book ID: " + bookID);
+        System.out.println("Title: " + title);
+        System.out.println("Author: " + author);
+    }
 	
-	public String displayInfo(){
-		 title;
-	
-	}
-	
-	public displayInfo(boolean showLibrary){
+	public void displayInfo(boolean showLibrary){
 		if(showLibrary==true) {
-			show LIBRARY_NAME;
+			System.out.println(LIBRARY_NAME);
 		}	
 	}
-	public static displayTotalBooks() {
-		System.out.println();
+	
+	public static int displayTotalBooks() {
+		return bookCounter;
 	}
 }
 
 
 public class Books {
-	Book b1= new Book();
-	Book b2= new Book();
-	Book b3= new Book();
-
-}
+	public static void main(String[] args) {
+		Book b1= new Book();
+		Book b2= new Book();
+		Book b3= new Book();
+	}
+}	
