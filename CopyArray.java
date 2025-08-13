@@ -17,14 +17,15 @@ public class CopyArray {
 	
 	        int[] copy = new int[elements];
 	        for (int i = 0; i < elements; i++) {
-	            	array[i] = copy[i];
+	            	copy[i] = array[i];
 	        }
 	        
 	        System.out.println("Original Array:");
 	        for (int i = 0; i < elements; i++) {
 	                System.out.print(array[i] + "\t");
 	        }
-	        
+            System.out.println();
+
 	        System.out.println("Copy of the Array:");
 	        for (int i = 0; i < elements; i++) {
 	                System.out.print(copy[i] + "\t");
