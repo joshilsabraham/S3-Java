@@ -2,31 +2,35 @@ import java.util.Scanner;
 
 public class Transpose {
     public static void main(String[] args) {
-        int[][] matrix = new int[4][3];
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the Array Elements (4x3 matrix): ");
 
-        for (int i = 0; i < 4; i++) {
-            for (int j = 0; j < 3; j++) {
+        System.out.print("Enter number of rows: ");
+        int rows = sc.nextInt();
+        System.out.print("Enter number of columns: ");
+        int cols = sc.nextInt();
+
+        int[][] matrix = new int[rows][cols];
+        System.out.println("Enter the Array Elements (" + rows + "x" + cols + " matrix): ");
+
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
                 matrix[i][j] = sc.nextInt();
             }
         }
 
-        // Transpose the matrix: original is 4x3, transpose is 3x4
-        int[][] transpose = new int[3][4];
-        for (int i = 0; i < 4; i++) {
-            for (int j = 0; j < 3; j++) {
+        int[][] transpose = new int[cols][rows];
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
                 transpose[j][i] = matrix[i][j];
             }
         }
 
         System.out.println("Transpose of the Matrix:");
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 4; j++) {
+        for (int i = 0; i < cols; i++) {
+            for (int j = 0; j < rows; j++) {
                 System.out.print(transpose[i][j] + "\t");
             }
             System.out.println();
         }
-
-        }
+    }
 }
